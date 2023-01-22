@@ -1,110 +1,567 @@
-<!doctype html>
-<html>
-<head>
-    <meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, name='viewport' ">
-	<link rel="stylesheet" href="css/style.css ">
-	
-	<!-- [ Meta Tag SEO ] -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-	<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
-	<meta content='website' name='MASSIVE WORLD'/>
-	<title>CROSS POINT CARE DIAGNOSTIC</title>
-	<!----meta description-->
-	<meta content='' name='description'/>
-	<!--meta keywords-->
-	<meta content='Health.' name='keywords'/>
-	<!----meta favicon-->	
-	<link href='/favicon.ico' rel='icon' type='image/x-icon'/>
-	<!----meta gsv-->
-	<meta content='CODE-VALIDATION-GOOGLE-WEBMASTER' name='google-site-verification'/>
-	<meta content='CODE-VALIDATION-BING-WEBMASTER' name='msvalidate.01'/>
-	<meta content='Alekha Kumar Swain' name='Author'/>
-	<meta content='general' name='rating'/>
-	<meta content='id' name='geo.country'/>
-	<!-- [ Social Media Meta Tag ] -->
-	<meta content='website' property='og:type'/>
-	<meta content='Please visit Our Site To Keep Your Body Healthy.' property='og:description'/>
-	<meta content='  ' property='og:image'/>
-	<meta content='  ' property='article:author'/>
-	<meta content='  ' property='article:publisher'/>
-	<meta content='CODE-APPLICATION-FACEBOOK' property='fb:app_id'/>
-	<meta content='CODE-ADMIN-FACEBOOK' property='fb:admins'/>
-	<meta content='en_US' property='og:locale'/>
-	<meta content='en_GB' property='og:locale:alternate'/>
-	<meta content='id_ID' property='og:locale:alternate'/>
-	<meta content='summary' name='twitter:card'/>
-	<meta content=' Cross Point Care DIAGNOSTIC ' name='twitter:title'/>
-	<meta content='USER-TWITTER' name='twitter:site'/>
-	<meta content='USER-TWITTER' name='twitter:creator'/>
-	<meta content='summary_large_image' name='twitter:card'/>
-	<meta content='#ea3557' name='theme-color'/>
-	<meta content='#ea3557' name='msapplication-navbutton-color'/>
-	<meta content='yes' name='apple-mobile-web-app-capable'/>
-	<meta content='#ea3557' name='apple-mobile-web-app-status-bar-style'/>
-		
-	<script src=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js " ></script>
-	<link href=" https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css " rel="stylesheet" >
-</head>
-<body style="background-color: #f0d4ce ;">
-	<nav style="position: sticky;top: 0;" class="navbar navbar-expand-lg navbar-dark bg-dark">
-		<div style="background-color:rgba(232,34,55,0.5);" class="container-fluid">
-			<a class="navbar-brand" href="#">
-								<b style="color:#297baa;font-size:;font-family: Tahoma, Verdana, sans-serif;  ">CROSS POINT </b><b style="font-family: Tahoma, Verdana, sans-serif;color:rgba(229,31,32,255)"> CARE DIAGNOSTIC</b>
-			</a>
-			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon"></span>
-			</button>
-			<div class="collapse navbar-collapse" id="navbarNav">
-				<ul class="navbar-nav ms-auto">
-					<li class="nav-item">
-						<a class="nav-link" href="#">Home</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">Connect</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">About Us</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="#">About Us</a>
-					</li>
-				</ul>
-			</div>
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style .css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+    	*{
+    	margin: 0;
+    	padding: 0;
+    	font-family: 'Roboto Condensed', sans-serif;
+    	}
+    	body{
+    			background-color:rgba(250,229,104,0.4);
+    	}
+    	/* navbar */
+    	
+    	.navbar-nav{
+    	margin-right: 0 !important;
+    	padding-right: 100px;
+    	}
+    	
+    	.navbar{
+    	background-color: rgba(200,39,34,0.4) ;
+    	overflow:hidden;
+    	width:100%;
+    	position:fixed;
+    	color: white !important;
+    	}
+    	.navbar:hover{
+    	background-color:rgba(250,109,34,1);
+    	}
+    	
+    	.nav-item a{
+    	color: black !important;
+    	font-family: "Montserrat", sans-serif;
+    	}
+    	
+    	.nav-item{
+    	padding-left: 2px;
+    	}
+    	.nav-item:hover{
+    	background-color:rgba(250,249,254,0.4);
+    	}
+    
+    	.navbar-brand{
+    	color: white !important;
+    	padding-left: 80px;
+    	}
+    	
+    	#navbar button{
+    	background-color:rgba(200,139,34,1);
+    	color: white !important;
+    	}
+    	#navbar button:hover{
+    	background-color:rgba(200,109,34,1);
+    	color: white !important;
+    	}
+    	
+    	/* banner */
+    	
+    	#banner-container{
+    	background-color: #0a193d;
+    	color: white !important;
+    	padding-top: 80px;
+    	padding-bottom: 80px;
+    	
+    	}
+    	
+    	#banner-row img{
+    	max-width: 70%;
+    	height: auto;
+    	display: block;
+    	padding-left: 30px;
+    	}
+    	
+    	#banner-row h3, p{
+    	padding-left: 20px;
+    	padding-top: 20px;
+    	text-align: center;
+    	}
+    	
+    	#banner-row a{
+    	background-color: white !important;
+    	color: black !important;
+    	border: none;
+    	margin-left: 20px;
+    	margin-top: 20px;
+    	
+    	}
+    	#banner-col{
+    	padding-left: 20px;
+    	}
+    	/* service */
+    	#service{
+    	padding-top: 80px;
+    	padding-bottom: 80px;
+    	}
+    	
+    	#service h1{
+    	padding-bottom: 70px;
+    	}
+    	
+    	/* about */
+    	
+    	#about{
+    	padding-top: 80px;
+    	padding-bottom: 80px;
+    	}
+    	
+    	#about h1{
+    	padding-bottom: 70px;
+    	}
+    	
+    	#about-col ul{
+    	padding-top: 50px;
+    	padding-left: 50px;
+    	}
+    	
+    	#about-col ul li{
+    	padding-top: 15px;
+    	
+    	}
+    	
+    	/* product */
+    	
+    	#product{
+    	padding-top: 80px;
+    	padding-bottom: 80px;
+    	}
+    	
+    	#product h1{
+    	padding-bottom: 70px;
+    	}
+    	
+    	#product-col2 ul{
+    	padding-top: 90px;
+    	}
+    	
+    	#product-col2 ul li{
+    	padding-top: 15px;
+    	}
+    	
+    	/* social */
+    	
+    	#social{
+    	padding-top: 80px;
+    	padding-bottom: 80px;
+    	}
+    	
+    	#social h1{
+    	padding-bottom: 70px;
+    	}
+    	
+    	.social-col a:hover img{
+    	transform: translateY(-10px);
+    	}
+    	
+    	#social-row{
+    	flex-direction: row;
+    	}
+    	
+    	/* footer */
+    	
+    	.mb-3{
+    	padding-top: 0px;
+    	}
+    	
+    	
+    	/*float button*/
+    	.float{
+    	position:fixed;
+    	width:60px;
+    	height:60px;
+    	bottom:10px;
+    	right:20px;
+    	background-color:#25d366;
+    	color:#FFF;
+    	border-radius:50px;
+    	text-align:center;
+    	font-size:30px;
+    	box-shadow: 7px 5px 5px #ffcc00;
+    	z-index:10;
+    	}
+    	
+    	
+    	.my-float{
+    	margin-top:10px;
+    	}
+    	
+    	/*map*/
+    	#map {
+    	height: 250px; /* The height is 400 pixels */
+    	width: 65%; /* The width is the width of the web page */
+    	display:block;
+    	margin-left: auto;
+    	margin-right: auto;
+    	position:relative ;
+    	z-index:1;
+    	}
+    	
+    	
+    	/* media */
+    	@media only screen and (max-width: 987px){
+    	.navbar-brand{
+    	padding-left: 0px;
+    	}
+    	}
+    	
+    	@media only screen and (max-width: 768px){
+    	#banner-row img{
+    	padding-top: 20px;
+    	}
+    	
+    	.social-col{
+    	width: 33%;
+    	}
+    	
+    	}
+    	
+    	
+    </style>
+    <title>CROSS PONT CARE DIAGNOSTICS</title>
+  </head>
+  <body>
+    <section id="navbar">
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+          	<b style="color:#297baa;font-size:;font-family: Tahoma, Verdana, sans-serif;  ">CROSS POINT </b><b style="font-family: Tahoma, Verdana, sans-serif;color:rgba(229,31,32,255)"> CARE DIAGNOSTIC</b></a>          
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">Services</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#product">Products</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#social">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+	<section id="banner" style=" background-color:#ffcc00; ">
+		<div class="container-fluid" id="banner-container"style=" background-color:rgba(255,226,100,1); ">
+		<img class=" mySlides" src=" Img/blood_search.png " style="width:100%; height:20em; display: block;margin-left: auto;margin-right: auto;">
+		<img class=" mySlides" src=" Img/Bloodcollection.png " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
+		<img class=" mySlides" src=" Img/Bloodtube.jpg " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
+		<img class=" mySlides" src=" Img/Find_health.gif " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
+		<img class=" mySlides" src=" Img/Home_collect.gif " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
+		<img class=" mySlides" src=" Img/Report_doctor.gif " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
 		</div>
-	</nav>
-	
-	
-	<div class="w3-content w3-section" style="max-width:500px;height:70px;text-align:center">
-	
-	<img class="mySlides" src=" Img/A-v.gif " style="width:100%">
-	<img class="mySlides" src=" Img/A+v.gif " style="width:100%">
-	<img class="mySlides" src=" Img/B+v.gif " style="width:100%">
-	<img class="mySlides" src=" Img/B-v.gif " style="width:100%">
-	<img class="mySlides" src=" Img/O+v.gif " style="width:100%">
-	<img class="mySlides" src=" Img/O-v.gif " style="width:100%">
-	
-	</div>
-	
-	<script>
-	var myIndex = 0;
-	carousel();
-	
-	function carousel() {
-	var i;
-	var x = document.getElementsByClassName("mySlides");
-	for (i = 0; i < x.length; i++) {
-	x[i].style.display = "none";  
-	}
-	myIndex++;
-	if (myIndex > x.length) {myIndex = 1}    
-	x[myIndex-1].style.display = "block";  
-	setTimeout(carousel, 2000); // Change image every 2 seconds
-	}
-	</script>
-	
-	
-	
-</body>
+		
+		<script>
+		var myIndex = 0;
+		carousel();
+		
+		function carousel() {
+		var i;
+		var x = document.getElementsByClassName("mySlides");
+		for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";  
+		}
+		myIndex++;
+		if (myIndex > x.length) {myIndex = 1}    
+		x[myIndex-1].style.display = "block";  
+		setTimeout(carousel, 2500); // Change image every 2 seconds
+		}
+		</script>
+
+	</section>
+    <!-- banner -->
+    <section id="banner">
+      <div class="container-fluid" id="banner-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-6" id="banner-col">
+            <h3>
+              BEST PROFESSIONAL WEBSITE DESIGN SOFTWARE DEVELOPMENT COMPANY
+            </h3>
+            <p>
+              The fastest way to grow your business with the leader in
+              Technology
+            </p>
+            <div class="d-grid gap-2 d-md-flex justify-content-center">
+              <a class="btn btn-primary" href="#" role="button">Contact Us</a>
+            </div>
+          </div>
+          <div class="col-md-6" id="banner-col2">
+            <img
+              class="img-responsive rounded mx-auto d-block"
+              src="Img/Home_collect.gif"
+              alt="blood collection"
+              
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- services -->
+    <section id="service">
+      <h1 class="text-center">SERVICES</h1>
+      <div class="container-fluid" id="service-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-4" id="service-col1">
+            <img
+              src="images/gfg.png"
+              class="img-fluid rounded mx-auto d-block"
+              alt="..."
+            />
+            <h3>Website Design</h3>
+            <p>
+              User Experience Design. Website Content Strategy. Cross Browser
+              and Platform Testing.
+            </p>
+          </div>
+          <div class="col-md-4" id="service-col2">
+            <img
+              src="images/gfg.png"
+              class="img-fluid rounded mx-auto d-block"
+              alt="..."
+            />
+            <h3>Bulk SMS</h3>
+            <p>
+              1.Toll Free Number 2. IVR 3. Virtual Number 4. Political or any
+              Voice Broadcasting
+            </p>
+          </div>
+          <div class="col-md-4" id="service-col3">
+            <img
+              src="images/gfg.png"
+              class="img-fluid rounded mx-auto d-block"
+              alt="..."
+            />
+            <h3>Payment Gateways</h3>
+            <p>
+              PayU India is the flagship company of Naspers group which is a $25
+              Billion internet and media conglomerate listed on London and
+              Johannesburg stock exchanges respectively.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+
+    <!-- about Us -->
+    <section id="about">
+      <h1 class="text-center">About Us</h1>
+      <div class="container-fluid" id="about-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-6" id="about-col">
+            <h3>Why Us</h3>
+            <ul>
+              <li>
+                Probuz is all about Delivering High Quality web design and
+                development services, Cost effective and reliable solutions.
+              </li>
+              <li>SCHOOL/COLLEGE MANAGEMENT SOFTWARE (CAMPUS PRO)</li>
+              <li>
+                Let us take care of your Business needs. Customer Productivity
+                is our Priority.
+              </li>
+              <li>Our expertise in Business includes</li>
+            </ul>
+          </div>
+          <div class="col-md-6" id="banner-col2">
+            <img
+              class="img-responsive rounded mx-auto d-block"
+              src="images/gfg.png"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- product -->
+
+    <section id="product">
+      <h1 class="text-center">Our Products</h1>
+      <div class="container-fluid" id="product-container">
+        <div class="row" id="banner-row">
+          <div class="col-md-6" id="about-col">
+            <img
+              class="img-responsive rounded mx-auto d-block"
+              src="images/gfg.png"
+              alt=""
+            />
+          </div>
+          <div class="col-md-6" id="product-col2">
+            <h3>Product List</h3>
+
+            <ul>
+              <li>CLINIC MANAGMENT SYSTEM</li>
+              <li>SCHOOL/COLLEGE MANAGEMENT SOFTWARE (CAMPUS PRO)</li>
+              <li>SERVICE MANAGEMENT SOFTWARE</li>
+              <li>E-COMMERCE WEBSITE</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <hr />
+    <!-- social -->
+    <section id="social">
+      <h1 class="text-center">Get In Touch</h1>
+      <div class="d-grid gap-2 d-md-flex justify-content-center">
+        <div class="row align-items-center" id="social-row">
+          <div class="col-md-4 social-col">
+            <a href=""
+              ><img
+                class="img-responsive rounded mx-auto d-block"
+                src="images/gfg.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="col-md-4 social-col">
+            <a href=""
+              ><img
+                class="img-responsive rounded mx-auto d-block"
+                src="images/icons8-instagram-64.png"
+                alt=""
+            /></a>
+          </div>
+          <div class="col-md-4 social-col">
+            <a href=""
+              ><img
+                class="img-responsive rounded mx-auto d-block"
+                src="images/icons8-twitter-64.png"
+                alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section id="footer">
+      <section id="banner">
+        <div class="container-fluid" id="banner-container">
+          <div class="row" id="banner-row">
+            <div class="col-md-4" id="footer-col1">
+              <h3>Location</h3>
+              <div id="map"></div>
+              
+              <!-- 
+              The `defer` attribute causes the callback to execute after the full HTML
+              document has been parsed. For non-blocking uses, avoiding race conditions,
+              and consistent behavior across browsers, consider loading using Promises
+              with https://www.npmjs.com/package/@googlemaps/js-api-loader.
+              -->
+              <script
+              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+              defer
+              ></script>
+              <script>
+              // Initialize and add the map
+              function initMap() {
+              // The location of Uluru
+              const masmap = { lat: 20.3249211 , lng: 85.8194715 };
+              // The map, centered at Uluru
+              const map = new google.maps.Map(document.getElementById("map"), {
+              zoom: 15,
+              center: masmap,
+              });
+              // The marker, positioned at Uluru
+              const marker = new google.maps.Marker({
+              position: masmap,
+              map: map,
+              });
+              }
+              
+              window.initMap = initMap;
+              </script>
+            </div>
+            <div class="col-md-4" id="footer-col2">
+              <h3>Contact Us</h3>
+              <p>Call Us- 1800-121-6532</p>
+              <p>Email Us- support@xyz.com</p>
+            </div>
+
+            <div class="col-md-4" id="footer-col2">
+              <h3>Subscribe To Newsletter</h3>
+              <form>
+                <div class="mb-3">
+                  <input
+                    type="email"
+                    placeholder="Enter Your Email"
+                    class="form-control"
+                    id="exampleInputEmail1"
+                    aria-describedby="emailHelp"
+                  />
+                  <div id="emailHelp" class="form-text">
+                    We'll never share your email with anyone else.
+                  </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+	<footer> 	
+	<small>
+	Copyright © 2023 || Designed by<b><a href="" > MAS </a></b>|| Powered by CPC DIAGNOSIS 	
+	</small> 	
+	</footer> 
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
+    -->
+    <center>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <a href="https://api.whatsapp.com/send?phone=7438926695&text=I%20Want%20some%20information" class="float" target="_blank">
+    	<i class="fa fa-whatsapp my-float"></i>
+    </a>
+    </center>
+  </body>
 </html>

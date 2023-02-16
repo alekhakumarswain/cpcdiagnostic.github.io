@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Services - My Diagnosis Business</title>
+    <link rel="stylesheet" type="text/css" href="services.css">
+    <style>
+       /* Set up basic page layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  }
+/* Style navigation links */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #333333;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f15b2a;
+}
+
+/* Style hero section */
+.hero {
+  background-image: url('services-hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 48px;
+  text-align: center;
+  text-shadow: 2px 2px #333333;
+}
+
+/* Style content section */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.content h2 {
+  font-size: 36px;
+  margin-top: 50px;
+}
+
+.content p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.content ul {
+  list-style: disc;
+  margin: 20px 0;
+  padding-left: 40px;
+}
+
+/* Style footer */
+footer {
+  background-color: #f7f7f7;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  color: #999999;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+    </style>
+ </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="hero">
+        <h1>Our Services</h1>
+      </div>
+      <div class="content">
+        <h2>Blood Tests</h2>
+        <p>We offer a wide range of blood tests to help diagnose and monitor various medical conditions. Some of the most common blood tests we perform include:</p>
+        <ul>
+          <li>Complete Blood Count (CBC)</li>
+          <li>Blood Glucose Test</li>
+          <li>Lipid Panel</li>
+          <li>Liver Function Test</li>
+          <li>Rapid Flu Test</li>
+          <li>Thyroid Function Test</li>
+        </ul>
+        <p>Before your blood test, you may be required to fast for a certain period of time or avoid certain foods or medications. Your healthcare provider will give you specific instructions.</p>
+        
+        <h2>Diagnostic Imaging</h2>
+        <p>We use state-of-the-art imaging equipment to help diagnose and monitor various medical conditions. Some of the most common types of imaging we perform include:</p>
+        <ul>
+          <li>X-ray</li>
+          <li>Computed Tomography (CT) scan</li>
+          <li>Magnetic Resonance Imaging (MRI)</li>
+          <li>Ultrasound</li>
+        </ul>
+        <p>Your healthcare provider will give you specific instructions on how to prepare for your imaging appointment, such as fasting or avoiding certain foods or medications.</p>
+        
+        <h2>Other Procedures</h2>
+        <p>In addition to blood tests and imaging, we offer a variety of other procedures to help diagnose and monitor medical conditions. Some of the most common procedures we perform include:</p>
+        <ul>
+          <li>Electrocardiogram (EKG)</li>
+          <li>Pulmonary Function Test (PFT)</li>
+          <li>Spirometry</li>
+          <li>Stress Test</li>
+        </ul>
+        <p>Your healthcare provider will give you specific instructions on how to prepare for your procedure.</p>
+      </div>
+    </main>
+
+    <footer>
+      <p>&copy; 2023 My Diagnosis Business. All rights reserved.</p>
+    </footer>
+  </body>
+</html>

@@ -1,567 +1,174 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+<html>
+<head>
+  <title>My Diagnosis Business</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+   /* Set up basic page layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
 
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="style .css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-    	*{
-    	margin: 0;
-    	padding: 0;
-    	font-family: 'Roboto Condensed', sans-serif;
-    	}
-    	body{
-    			background-color:rgba(250,229,104,0.4);
-    	}
-    	/* navbar */
-    	
-    	.navbar-nav{
-    	margin-right: 0 !important;
-    	padding-right: 100px;
-    	}
-    	
-    	.navbar{
-    	background-color: rgba(200,39,34,0.4) ;
-    	overflow:hidden;
-    	width:100%;
-    	position:fixed;
-    	color: white !important;
-    	}
-    	.navbar:hover{
-    	background-color:rgba(250,109,34,1);
-    	}
-    	
-    	.nav-item a{
-    	color: black !important;
-    	font-family: "Montserrat", sans-serif;
-    	}
-    	
-    	.nav-item{
-    	padding-left: 2px;
-    	}
-    	.nav-item:hover{
-    	background-color:rgba(250,249,254,0.4);
-    	}
-    
-    	.navbar-brand{
-    	color: white !important;
-    	padding-left: 80px;
-    	}
-    	
-    	#navbar button{
-    	background-color:rgba(200,139,34,1);
-    	color: white !important;
-    	}
-    	#navbar button:hover{
-    	background-color:rgba(200,109,34,1);
-    	color: white !important;
-    	}
-    	
-    	/* banner */
-    	
-    	#banner-container{
-    	background-color: #0a193d;
-    	color: white !important;
-    	padding-top: 80px;
-    	padding-bottom: 80px;
-    	
-    	}
-    	
-    	#banner-row img{
-    	max-width: 70%;
-    	height: auto;
-    	display: block;
-    	padding-left: 30px;
-    	}
-    	
-    	#banner-row h3, p{
-    	padding-left: 20px;
-    	padding-top: 20px;
-    	text-align: center;
-    	}
-    	
-    	#banner-row a{
-    	background-color: white !important;
-    	color: black !important;
-    	border: none;
-    	margin-left: 20px;
-    	margin-top: 20px;
-    	
-    	}
-    	#banner-col{
-    	padding-left: 20px;
-    	}
-    	/* service */
-    	#service{
-    	padding-top: 80px;
-    	padding-bottom: 80px;
-    	}
-    	
-    	#service h1{
-    	padding-bottom: 70px;
-    	}
-    	
-    	/* about */
-    	
-    	#about{
-    	padding-top: 80px;
-    	padding-bottom: 80px;
-    	}
-    	
-    	#about h1{
-    	padding-bottom: 70px;
-    	}
-    	
-    	#about-col ul{
-    	padding-top: 50px;
-    	padding-left: 50px;
-    	}
-    	
-    	#about-col ul li{
-    	padding-top: 15px;
-    	
-    	}
-    	
-    	/* product */
-    	
-    	#product{
-    	padding-top: 80px;
-    	padding-bottom: 80px;
-    	}
-    	
-    	#product h1{
-    	padding-bottom: 70px;
-    	}
-    	
-    	#product-col2 ul{
-    	padding-top: 90px;
-    	}
-    	
-    	#product-col2 ul li{
-    	padding-top: 15px;
-    	}
-    	
-    	/* social */
-    	
-    	#social{
-    	padding-top: 80px;
-    	padding-bottom: 80px;
-    	}
-    	
-    	#social h1{
-    	padding-bottom: 70px;
-    	}
-    	
-    	.social-col a:hover img{
-    	transform: translateY(-10px);
-    	}
-    	
-    	#social-row{
-    	flex-direction: row;
-    	}
-    	
-    	/* footer */
-    	
-    	.mb-3{
-    	padding-top: 0px;
-    	}
-    	
-    	
-    	/*float button*/
-    	.float{
-    	position:fixed;
-    	width:60px;
-    	height:60px;
-    	bottom:10px;
-    	right:20px;
-    	background-color:#25d366;
-    	color:#FFF;
-    	border-radius:50px;
-    	text-align:center;
-    	font-size:30px;
-    	box-shadow: 7px 5px 5px #ffcc00;
-    	z-index:10;
-    	}
-    	
-    	
-    	.my-float{
-    	margin-top:10px;
-    	}
-    	
-    	/*map*/
-    	#map {
-    	height: 250px; /* The height is 400 pixels */
-    	width: 65%; /* The width is the width of the web page */
-    	display:block;
-    	margin-left: auto;
-    	margin-right: auto;
-    	position:relative ;
-    	z-index:1;
-    	}
-    	
-    	
-    	/* media */
-    	@media only screen and (max-width: 987px){
-    	.navbar-brand{
-    	padding-left: 0px;
-    	}
-    	}
-    	
-    	@media only screen and (max-width: 768px){
-    	#banner-row img{
-    	padding-top: 20px;
-    	}
-    	
-    	.social-col{
-    	width: 33%;
-    	}
-    	
-    	}
-    	
-    	
-    </style>
-    <title>CROSS PONT CARE DIAGNOSTICS</title>
-  </head>
-  <body>
-    <section id="navbar">
-      <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-          	<b style="color:#297baa;font-size:;font-family: Tahoma, Verdana, sans-serif;  ">CROSS POINT </b><b style="font-family: Tahoma, Verdana, sans-serif;color:rgba(229,31,32,255)"> CARE DIAGNOSTIC</b></a>          
-          </a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav m-auto">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#service">Services</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#about">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#product">Products</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#social">Contact Us</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+header {
+  background-color: #ffffff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: #333333;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.hero {
+  background-image: url('hero-image.jpg');
+  background-size: cover;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin: 10px 0;
+}
+
+.cta-button {
+  background-color: #ff5e5e;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.cta-button:hover {
+  background-color: #e55e5e;
+}
+
+.featured-services
+/* Set up Featured Services section */
+.featured-services {
+margin-top: 50px;
+}
+
+.featured-services h2 {
+font-size: 2rem;
+margin-bottom: 20px;
+}
+
+.featured-services ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+}
+.featured-services ul {
+list-style: none;
+margin: 0;
+padding: 0;
+display: flex;
+justify-content: space-between;
+}
+
+.featured-services li {
+width: 30%;
+background-color: #f5f5f5;
+border-radius: 5px;
+padding: 20px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.featured-services li h3 {
+font-size: 1.5rem;
+margin: 0;
+}
+.featured-services li p {
+font-size: 1rem;
+margin: 10px 0;
+}
+
+/* Set up footer */
+footer {
+background-color: #333333;
+color: #ffffff;
+padding: 10px;
+text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Products</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="hero">
+      <h1>Welcome to My Diagnosis Business</h1>
+      <p>We provide high-quality diagnostic services to help you stay healthy.</p>
+      <a href="#" class="cta-button">Book an Appointment</a>
     </section>
-
-	<section id="banner" style=" background-color:#ffcc00; ">
-		<div class="container-fluid" id="banner-container"style=" background-color:rgba(255,226,100,1); ">
-		<img class=" mySlides" src=" Img/blood_search.png " style="width:100%; height:20em; display: block;margin-left: auto;margin-right: auto;">
-		<img class=" mySlides" src=" Img/Bloodcollection.png " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
-		<img class=" mySlides" src=" Img/Bloodtube.jpg " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
-		<img class=" mySlides" src=" Img/Find_health.gif " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
-		<img class=" mySlides" src=" Img/Home_collect.gif " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
-		<img class=" mySlides" src=" Img/Report_doctor.gif " style="width:100%;height:20em;display: block;margin-left: auto;margin-right: auto;">
-		</div>
-		
-		<script>
-		var myIndex = 0;
-		carousel();
-		
-		function carousel() {
-		var i;
-		var x = document.getElementsByClassName("mySlides");
-		for (i = 0; i < x.length; i++) {
-		x[i].style.display = "none";  
-		}
-		myIndex++;
-		if (myIndex > x.length) {myIndex = 1}    
-		x[myIndex-1].style.display = "block";  
-		setTimeout(carousel, 2500); // Change image every 2 seconds
-		}
-		</script>
-
-	</section>
-    <!-- banner -->
-    <section id="banner">
-      <div class="container-fluid" id="banner-container">
-        <div class="row" id="banner-row">
-          <div class="col-md-6" id="banner-col">
-            <h3>
-              BEST PROFESSIONAL WEBSITE DESIGN SOFTWARE DEVELOPMENT COMPANY
-            </h3>
-            <p>
-              The fastest way to grow your business with the leader in
-              Technology
-            </p>
-            <div class="d-grid gap-2 d-md-flex justify-content-center">
-              <a class="btn btn-primary" href="#" role="button">Contact Us</a>
-            </div>
-          </div>
-          <div class="col-md-6" id="banner-col2">
-            <img
-              class="img-responsive rounded mx-auto d-block"
-              src="Img/Home_collect.gif"
-              alt="blood collection"
-              
-            />
-          </div>
-        </div>
-      </div>
+    <section class="featured-services">
+      <h2>Featured Services</h2>
+      <ul>
+        <li>
+          <h3>Blood Tests</h3>
+          <p>Our blood tests are quick and painless, and can provide valuable information about your health.</p>
+        </li>
+        <li>
+          <h3>Diagnostic Imaging</h3>
+          <p>Our state-of-the-art imaging technology can help diagnose a range of health conditions.</p>
+        </li>
+        <li>
+          <h3>Wellness Checks</h3>
+          <p>Regular wellness checks can help you stay on top of your health and catch potential issues early.</p>
+        </li>
+      </ul>
     </section>
-
-    <!-- services -->
-    <section id="service">
-      <h1 class="text-center">SERVICES</h1>
-      <div class="container-fluid" id="service-container">
-        <div class="row" id="banner-row">
-          <div class="col-md-4" id="service-col1">
-            <img
-              src="images/gfg.png"
-              class="img-fluid rounded mx-auto d-block"
-              alt="..."
-            />
-            <h3>Website Design</h3>
-            <p>
-              User Experience Design. Website Content Strategy. Cross Browser
-              and Platform Testing.
-            </p>
-          </div>
-          <div class="col-md-4" id="service-col2">
-            <img
-              src="images/gfg.png"
-              class="img-fluid rounded mx-auto d-block"
-              alt="..."
-            />
-            <h3>Bulk SMS</h3>
-            <p>
-              1.Toll Free Number 2. IVR 3. Virtual Number 4. Political or any
-              Voice Broadcasting
-            </p>
-          </div>
-          <div class="col-md-4" id="service-col3">
-            <img
-              src="images/gfg.png"
-              class="img-fluid rounded mx-auto d-block"
-              alt="..."
-            />
-            <h3>Payment Gateways</h3>
-            <p>
-              PayU India is the flagship company of Naspers group which is a $25
-              Billion internet and media conglomerate listed on London and
-              Johannesburg stock exchanges respectively.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr />
-
-    <!-- about Us -->
-    <section id="about">
-      <h1 class="text-center">About Us</h1>
-      <div class="container-fluid" id="about-container">
-        <div class="row" id="banner-row">
-          <div class="col-md-6" id="about-col">
-            <h3>Why Us</h3>
-            <ul>
-              <li>
-                Probuz is all about Delivering High Quality web design and
-                development services, Cost effective and reliable solutions.
-              </li>
-              <li>SCHOOL/COLLEGE MANAGEMENT SOFTWARE (CAMPUS PRO)</li>
-              <li>
-                Let us take care of your Business needs. Customer Productivity
-                is our Priority.
-              </li>
-              <li>Our expertise in Business includes</li>
-            </ul>
-          </div>
-          <div class="col-md-6" id="banner-col2">
-            <img
-              class="img-responsive rounded mx-auto d-block"
-              src="images/gfg.png"
-              alt=""
-            />
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr />
-    <!-- product -->
-
-    <section id="product">
-      <h1 class="text-center">Our Products</h1>
-      <div class="container-fluid" id="product-container">
-        <div class="row" id="banner-row">
-          <div class="col-md-6" id="about-col">
-            <img
-              class="img-responsive rounded mx-auto d-block"
-              src="images/gfg.png"
-              alt=""
-            />
-          </div>
-          <div class="col-md-6" id="product-col2">
-            <h3>Product List</h3>
-
-            <ul>
-              <li>CLINIC MANAGMENT SYSTEM</li>
-              <li>SCHOOL/COLLEGE MANAGEMENT SOFTWARE (CAMPUS PRO)</li>
-              <li>SERVICE MANAGEMENT SOFTWARE</li>
-              <li>E-COMMERCE WEBSITE</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <hr />
-    <!-- social -->
-    <section id="social">
-      <h1 class="text-center">Get In Touch</h1>
-      <div class="d-grid gap-2 d-md-flex justify-content-center">
-        <div class="row align-items-center" id="social-row">
-          <div class="col-md-4 social-col">
-            <a href=""
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="images/gfg.png"
-                alt=""
-            /></a>
-          </div>
-          <div class="col-md-4 social-col">
-            <a href=""
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="images/icons8-instagram-64.png"
-                alt=""
-            /></a>
-          </div>
-          <div class="col-md-4 social-col">
-            <a href=""
-              ><img
-                class="img-responsive rounded mx-auto d-block"
-                src="images/icons8-twitter-64.png"
-                alt=""
-            /></a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- footer -->
-    <section id="footer">
-      <section id="banner">
-        <div class="container-fluid" id="banner-container">
-          <div class="row" id="banner-row">
-            <div class="col-md-4" id="footer-col1">
-              <h3>Location</h3>
-              <div id="map"></div>
-              
-              <!-- 
-              The `defer` attribute causes the callback to execute after the full HTML
-              document has been parsed. For non-blocking uses, avoiding race conditions,
-              and consistent behavior across browsers, consider loading using Promises
-              with https://www.npmjs.com/package/@googlemaps/js-api-loader.
-              -->
-              <script
-              src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
-              defer
-              ></script>
-              <script>
-              // Initialize and add the map
-              function initMap() {
-              // The location of Uluru
-              const masmap = { lat: 20.3249211 , lng: 85.8194715 };
-              // The map, centered at Uluru
-              const map = new google.maps.Map(document.getElementById("map"), {
-              zoom: 15,
-              center: masmap,
-              });
-              // The marker, positioned at Uluru
-              const marker = new google.maps.Marker({
-              position: masmap,
-              map: map,
-              });
-              }
-              
-              window.initMap = initMap;
-              </script>
-            </div>
-            <div class="col-md-4" id="footer-col2">
-              <h3>Contact Us</h3>
-              <p>Call Us- 1800-121-6532</p>
-              <p>Email Us- support@xyz.com</p>
-            </div>
-
-            <div class="col-md-4" id="footer-col2">
-              <h3>Subscribe To Newsletter</h3>
-              <form>
-                <div class="mb-3">
-                  <input
-                    type="email"
-                    placeholder="Enter Your Email"
-                    class="form-control"
-                    id="exampleInputEmail1"
-                    aria-describedby="emailHelp"
-                  />
-                  <div id="emailHelp" class="form-text">
-                    We'll never share your email with anyone else.
-                  </div>
-                </div>
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </form>
-            </div>
-          </div>
-        </div>
-      </section>
-    </section>
-	<footer> 	
-	<small>
-	Copyright © 2023 || Designed by<b><a href="" > MAS </a></b>|| Powered by CPC DIAGNOSIS 	
-	</small> 	
-	</footer> 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-      crossorigin="anonymous"
-    ></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.min.js" integrity="sha384-nsg8ua9HAw1y0W1btsyWgBklPnCUAFLuTMS2G72MMONqmOymq585AcH49TLBQObG" crossorigin="anonymous"></script>
-    -->
-    <center>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <a href="https://api.whatsapp.com/send?phone=7438926695&text=I%20Want%20some%20information" class="float" target="_blank">
-    	<i class="fa fa-whatsapp my-float"></i>
-    </a>
-    </center>
-  </body>
+  </main>
+  <footer>
+    <p>&copy; My Diagnosis Business 2023</p>
+  </footer>
+</body>
 </html>

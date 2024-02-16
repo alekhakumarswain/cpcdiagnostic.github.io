@@ -1,0 +1,123 @@
+
+
+
+<html>
+	<head>
+		<style type="text/css">
+		
+			.form {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 80%;
+			padding:40px ;
+			box-sizing: border-box;
+			border-radius:24px;
+			background:rgba(230,246,77,0.1);
+			box-shadow: 0 20px 30px rgba(0,0,0,.5);
+			}
+			fieldset{
+			background-color:rgba(230,246,77,0.6);
+			border:2px solid black;
+			}
+			legend{
+				background-color:rgba(230,246,77);
+				border:2px solid black;
+			}
+			.app-input {
+			font-size: 15px;
+			border: 1px solid #ccc;
+			padding: 10px;
+			margin-bottom: 25px;
+			height: 25px;
+			width: calc(100% - 23px);			
+			box-sizing: border-box;			
+			color: #666;
+			font-weight: 700;
+			text-transform: uppercase;
+			resize: none;
+			}
+			.app-input:focus {
+			border-color:#6e8095;
+			outline: none;
+			}
+			.app-button {
+			color: #fff;
+			background: #55a1ff;
+			border: 0;
+			outline: 0;
+			width: 100%;
+			height: 50px;
+			font-size: 16px;
+			text-align: center;
+			cursor: pointer;
+			}
+			h2{
+				color: #666;
+				text-align: center;
+				font-size: 30px;
+				text-transform: uppercase;
+			}
+			
+		</style>
+	</head>
+	<body>		
+	
+		<form class="form" action="appoint.php" method="POST">
+		<h2>BOOK APPOINTMENT</h2>
+		<fieldset>
+			<legend><b>Personal Details</b></legend>
+			<label>
+				<input class="app-input" type="text" placeholder="NAME" name="Name" required>
+			</label>
+			<label>
+				<input class="app-input" type="number" placeholder="NUMBER " name="Number" required >		
+			</label>
+			<label>				
+				<input class="app-input" type="email" placeholder="Email address" name="Email" required>
+			</label><br>
+			<label>
+				<input type="radio" name="Gender" value="male"required>
+				Male 
+			</label>
+			<label>
+				<input type="radio" name="Gender" value="female">
+				Female
+			</label>
+			<label>
+				<input type="radio" name="Gender" value="other">
+				Other
+			</label>
+		</fieldset>
+		<fieldset>
+			<legend>Appointment Details</legend>			
+				<label>
+					Select Date
+					<input class="app-input" type="date" name="Date" name="appdate" required>
+				</label>			
+				<label>
+					Select Time
+					<input class="app-input" type="time" name="Time" name="apptime" required>
+					</label>
+				</label>			
+				<p>Confirmation request by</p>			
+				<label>
+					<input type="radio" name="Confirm" value="email" checked required>
+					WhatsApp 
+				</label>
+				<label>
+					<input type="radio" name="Confirm" value="phone" required>
+					Phone call
+				</label>			
+		</fieldset>
+		<div class="btns">
+			<input class="app-button" type="submit" value="Submit">
+		</div>
+		</form>
+		<script>
+			var today = new Date().toISOString().split('T')[0];
+			document.getElementsByName("Date")[0].setAttribute('min', today);			
+		</script>
+	</body>
+</html>

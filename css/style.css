@@ -1,1 +1,54 @@
+* {
+	box-sizing:border-box; 
+	font-display: swap; max-width: 100%;
+}
+html{
+	overflow-x:hidden;
+	-ms-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	margin: 0;
+	 padding: 0;
+	  scroll-behavior: smooth;
+}
+body {
+	margin:0;
+	padding:0;
+	border-right:1px solid #b5b5b5;
+	font-family: Segoe UI,SegoeUI,"Helvetica Neue",Helvetica,Arial,sans-serif;
+	background-color:#FFF982;
+}
 
+
+.navbar-brand{
+    font-size: 35px;
+    font-weight: 600;
+}
+
+nav li a {
+    font-size: 18px;
+    font-weight: 500;   
+}
+
+
+
+
+@media only screen and (max-width: 650px){
+b {
+	font-size:17px;
+}
+.logo-img{
+    height: 20px;
+    width: 50px;
+    border-radius: 50px;
+}
+}
+@media only screen and (max-width: 1975px) and (min-width: 651px){
+b {
+	font-size:90px;
+}
+.logo-img{
+    height: 20px;
+    width: 70px;
+    border-radius: 50px;
+}
+}

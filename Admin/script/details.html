@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Store Visitor Details</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script> 
+
+        $.getJSON('https://ipapi.co/json/', function(data) {
+            // Get the current date and time
+            var currentDate = new Date().toLocaleDateString();
+            var currentTime = new Date().toLocaleTimeString();
+
+            // Send visitor details to the PHP script for storing
+            $.ajax({
+                url: 'store_visitor_details.php', // Replace with the actual PHP script file name
+                type: 'POST',
+                data: {
+                    ip: data.ip,
+                    city: data.city,
+                    region: data.region,
+                    country: data.country_name,
+                    postal_code: data.postal,
+                    latitude: data.latitude,
+                    longitude: data.longitude,
+                    country_code: data.country_calling_code,
+                    currency: data.currency,
+                    timezone: data.timezone,
+                    network_provider: data.org          
+                },
+                success: function(response) {
+                    console.log('Visitor details stored successfully.');
+                },
+                error: function() {
+                    console.log('Error storing visitor details.');
+                }
+            });
+        });
+
+        </script>
+</body>
+</html>

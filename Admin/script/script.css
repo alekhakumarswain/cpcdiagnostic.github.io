@@ -1,0 +1,96 @@
+.popup-alert-div {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.644);
+		display: -webkit-box;
+		display: -ms-flexbox;
+		
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		z-index:100;
+		}
+		
+		.popup-alert {
+		width: 26rem;
+		background-color: rgb(255, 255, 255);
+		padding: 1rem;
+		border-radius: 14px;
+		font-family: "Poppins", sans-serif;
+		text-align: center;
+		-webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+		box-shadow: 0 0 1rem rgba(0, 10, 0, 0.1);
+		}
+		
+		.popup-alert-header,
+		.popup-alert:link,
+		.popup-alert:visited {
+		font-size: 1.2em;
+		font-weight: 600;
+		margin-top: -2.6rem;
+		margin-bottom: 2rem;
+		background-image: -webkit-gradient(linear, left bottom, right top, from(#e90606), to(#ff4a4a));
+		background-image: -o-linear-gradient(left bottom, #e90606, #ff4a4a);
+		background-image: linear-gradient(to right top, #e90606, #f44a4a);
+		color: rgb(241, 241, 241);
+		padding: 0.5rem 1rem;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: center;
+		-webkit-transform: skew(-10deg) rotate(-3deg);
+		-ms-transform: skew(-10deg) rotate(-3deg);
+		box-shadow: 50 0 1rem rgba(0, 0, 0, 0.8);
+		-webkit-tap-highlight-color: transparent;
+		text-decoration: none;
+		border-radius:35px;
+		}
+		
+		
+		
+		
+		.popup-alert-btn,
+		.popup-alert-btn:link,
+		.popup-alert-btn:active,
+		.popup-alert-btn:visited {
+		text-transform: uppercase;
+		margin-top: 1rem;
+		display: inline-block;
+		padding: 0.5rem 2rem;
+		color: #ffffff;
+		font-family: "Poppins", sans-serif;
+		text-decoration: none;
+		font-weight: 400;
+		border-radius:35px;
+		-webkit-tap-highlight-color: transparent;
+		-webkit-transform: skew(-10deg) rotate(-3deg);
+		-ms-transform: skew(-10deg) rotate(-3deg);
+		transform: skew(-10deg) rotate(-3deg);
+		-webkit-box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+		box-shadow: 10 40 1rem rgba(100, 40, 0, 0.7);
+		}
+		
+		
+		img{
+			height:22rem;
+			width:22rem;
+			border-radius:15px 20px 20px 20px;
+			margin-right:5px;
+		}
+		.close{
+			background-color:rgb(230,4,122);
+		}
+		.submit{
+			background-color:red;
+		}
